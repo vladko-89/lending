@@ -1,0 +1,163 @@
+.aqua-p2p {
+  .column {
+    p {
+      color: map-get($color, "grey");
+      letter-spacing: 0.5px;
+    }
+
+    .video-block {
+      width: 100%;
+      padding-bottom: rem(35);
+      position: relative;
+
+      @include media(">tablet") {
+        padding-bottom: rem(40);
+      }
+
+      .video-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+
+        &.hide {
+          width: 0;
+          height: 0;
+        }
+      }
+
+      video {
+        width: 100%;
+        height: rem(180);
+
+      }
+
+      video[poster] {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+
+      .play-button {
+        &.hide {
+          opacity: 0;
+        }
+
+        @extend %d-flex-justify-center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-113%) translateX(-50%);
+        width: rem(67);
+        height: rem(67);
+        background-color: map-get($color, 'grey');
+        border-radius: 50%;
+        overflow: hidden;
+        transition: all 0.3s ease;
+        align-items: center;
+
+        svg {
+          width: rem(15);
+          height: rem(20);
+          fill: map-get($color, 'popup-bg');
+          transition: all 0.3s ease;
+          position: relative;
+          left: 2px;
+        }
+
+        &:hover {
+          background-color: map-get($color, 'popup-bg');
+
+          svg {
+            fill: map-get($color, 'hover-play');
+          }
+        }
+      }
+
+      p {
+        letter-spacing: 1px;
+        text-align: center;
+        margin-top: rem(20);
+        font-size: map-get($text, "extra-small-font");
+        font-weight: map-get($text, "bold");
+        line-height: 1.6;
+      }
+    }
+
+    .programming {
+      padding-bottom: rem(45);
+
+      @include media(">tablet") {
+        padding-bottom: rem(40);
+      }
+
+      h3 {
+        font-size: rem(30);
+        font-weight: map-get($text, "regular");
+        line-height: rem(36);
+        margin-bottom: rem(32);
+
+        @include media(">tablet") {
+          margin-bottom: rem(22);
+        }
+      }
+
+      p {
+        font-size: rem(18);
+        line-height: rem(24);
+      }
+
+      @include media(">tablet") {
+        padding-bottom: rem(60);
+
+        h3 {
+          font-size: rem(42);
+          line-height: rem(50);
+          margin-bottom: rem(29);
+        }
+      }
+    }
+
+    .aqua-item {
+      padding-bottom: rem(40);
+
+      @include media(">tablet") {
+        padding-bottom: rem(30);
+      }
+
+      h4 {
+        font-size: rem(19);
+        line-height: rem(24);
+        margin-bottom: rem(11);
+      }
+
+      p {
+        font-size: rem(15);
+        line-height: rem(21);
+      }
+
+      @include media(">tablet") {
+        padding-bottom: rem(55);
+
+        h4 {
+          font-size: rem(30);
+          line-height: rem(36);
+          margin-bottom: rem(19);
+        }
+
+        p {
+          max-width: rem(345);
+        }
+      }
+    }
+
+    button.btn {
+      padding: rem(10) rem(20);
+      margin-top: rem(13);
+
+      @include media(">tablet") {
+        margin-top: rem(5);
+      }
+    }
+  }
+}

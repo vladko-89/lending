@@ -1,0 +1,8 @@
+.wrapper {
+  position: relative;
+  overflow: hidden;
+
+  &.technology {
+    background-color: map-get($color, "black");
+  }
+}

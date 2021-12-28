@@ -1,0 +1,85 @@
+.forget {
+
+    position: relative;
+    // overflow: hidden;
+    padding-top: rem(105);
+    padding-bottom: rem(100);
+    z-index: 4;
+
+    @include media(">tablet") {
+        padding-top: rem(200);
+        padding-bottom: rem(165);
+    }
+
+
+
+    .title {
+        position: relative;
+        margin-bottom: rem(42);
+        z-index: 10;
+
+        @include media(">tablet") {
+            margin-bottom: rem(55);
+        }
+    }
+
+    .sub-title {
+        position: relative;
+        z-index: 10;
+        max-width: rem(730);
+        width: 100%;
+        margin: auto;
+    }
+}
+
+.forget__ellipse {
+    position: absolute;
+    top: 12%;
+    left: 25%;
+    z-index: 3;
+
+    width: 1265px;
+
+    height: 1258px;
+    
+    border-radius: 50%;
+}
+
+
+.ellipse-orange {
+    background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
+    mix-blend-mode: normal;
+    filter: blur(110px);
+}
+
+
+.build__overlay {
+    position: absolute;
+    z-index: 1;
+    top: 24%;
+    left: -5%;
+
+    width: 3601px;
+    height: 1785px;
+
+    background-image: url('../images/black-bg.png');
+    background-size: 3601px 1785px;
+}
+
+.forget-blue {
+    position: absolute;
+    z-index: 2;
+    top: 15%;
+    left: -5%;
+
+    width: 3132px;
+    height: 1447px;
+
+    background-image: url('../images/bg-balls.png');
+    background-size: 3132px 1447px;
+}
+
+
+
+
+

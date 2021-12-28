@@ -1,0 +1,62 @@
+.main-technology {
+  padding-top: rem(199);
+  padding-bottom: rem(120);
+  position: relative;
+
+  &::before {
+    width: rem(3316);
+    height: rem(3126);
+    content: '';
+    top: rem(-2600);
+    left: rem(-1270);
+    position: absolute;
+    // background: radial-gradient(50% 50% at 50% 50%, #90BAD2 0%, #5E79CB 100%);
+    background-image: url("../images/technology-gradient.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    // mix-blend-mode: normal;
+    // filter: blur(264px);
+    // border-radius: 50%;
+    // overflow: hidden;
+    z-index: 1;
+
+    @include media(">desktop") {
+      top: rem(-2550);
+      left: rem(-1150);
+    }
+
+    @include media(">widescreen-lg") {
+      transform: translateX(17vw);
+    }
+  }
+
+  @include media(">tablet") {
+    padding-top: rem(290);
+    padding-bottom: rem(198);
+  }
+
+  .title {
+    mix-blend-mode: normal;
+    padding: 0;
+    margin-bottom: rem(32);
+    line-height: 1.2;
+
+    @include media(">tablet") {
+      margin-bottom: rem(50);
+      line-height: 1.1;
+    }
+  }
+
+  .sub-title {
+    margin-bottom: rem(45);
+    padding: 0;
+
+    @include media(">tablet") {
+      margin-bottom: rem(48);
+    }
+  }
+
+  .btn {
+    padding: rem(16) rem(51) rem(17) rem(51);
+  }
+}

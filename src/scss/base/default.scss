@@ -1,0 +1,133 @@
+// When using the script 'burger-menu' add class overflow
+html {
+  font-size: #{$browser-context}px;
+
+  // @include media(">desktop") {
+  //   font-size: #{$browser-context*0.7}px;
+  // }
+}
+
+body {
+  font-family: map-get($base, 'base-font');
+  font-size: rem(15);
+  line-height: 1.4;
+  color: map-get($color, 'white');
+
+  &.overflow {
+    overflow: hidden;
+  }
+}
+
+.container {
+  position: relative;
+  
+  max-width: rem(1269);
+  width: 100%;
+  padding: 0 rem(15);
+  margin: auto;
+
+  @include media(">widescreen-lg") {
+    max-width: rem(1530);
+  }
+}
+
+.btn {
+  border-radius: rem(30);
+  padding: rem(15) rem(25);
+  line-height: 1.4;
+  color: map-get($color, 'white');
+  font-size: rem(15);
+  font-weight: map-get($text, 'bold');
+  transition: map-get($base, 'base-transition');
+
+  &.primary {
+    background: map-get($color, 'btn-bg-primary');
+  }
+
+  &.secondary {
+    background: map-get($color, 'btn-bg-secondary');
+
+    &:hover {
+      background: map-get($color, 'hover-btn');
+    }
+  }
+
+  &:hover {
+    color: map-get($color, 'popup-bg');
+  }
+}
+
+.svg-sprite {
+  height: 0;
+  width: 0;
+  overflow: hidden;
+  opacity: 0;
+}
+
+.bg {
+
+  width: 3601px;
+  left: 50%;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: map-get($text, 'bold');
+  letter-spacing: 0.2px;
+  color: map-get($color, 'black');
+  transition: map-get($base, 'base-transition');
+
+  &:hover {
+    color: map-get($color, 'popup-bg');
+  }
+}
+
+.underline-light {
+  color: map-get($color, 'white');
+  letter-spacing: 0.2px;
+  font-weight: map-get($text, 'bold');
+  text-decoration: underline map-get($color, 'popup-bg');
+
+  &::after {
+    display: inline-block;
+    content: url(../images/green-arrow.svg);
+    margin-left: 8px;
+  }
+
+}
+
+section {
+  position: relative;
+  z-index: 1;
+}
+
+.main-bg {
+  position: relative;
+  overflow: hidden;
+  background-color: map-get($color, 'grey-light');
+
+  &::before {
+    position: absolute;
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: auto;
+    content: '';
+    width: rem(2147);
+    height: 103%;
+     //background-image: url('../images/bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+
+    @include media(">full-hd") {
+      width: 100%;
+    }
+  }
+}
+
+svg {
+  width: fit-content;
+  height: inherit;
+  object-fit: contain;
+}

@@ -1,0 +1,65 @@
+.fluence {
+    color: map-get($color, 'black');
+    background-image: url('../images/bg-fluence.png');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    padding-top: rem(124);
+    padding-bottom: rem(85);
+
+    @include media(">tablet") {
+        padding-top: rem(187);
+        padding-bottom: rem(127);
+    }
+
+    .title {
+        margin-bottom: rem(55);
+
+        @include media(">tablet") {
+            margin-bottom: rem(125);
+
+            br {
+                display: none;
+            }
+        }
+    }
+
+    .row {
+        align-items: stretch;
+    }
+
+    .item {
+        margin-bottom: rem(40);
+
+        @include media(">tablet") {
+            margin-bottom: rem(100);
+        }
+
+        .number {
+            font-weight: map-get($text, 'bold');
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-size: rem(10);
+            line-height: 1.6;
+            color: map-get($color, 'color-number');
+            margin-bottom: rem(5);
+        }
+
+        &-title {
+            line-height: 1.2;
+            font-size: rem(19);
+            font-weight: map-get($text, 'bold');
+            margin-bottom: rem(12);
+
+            @include media(">tablet") {
+                font-size: rem(30);
+                margin-bottom: rem(25);
+                font-weight: map-get($text, 'regular');
+            }
+        }
+
+        p {
+            letter-spacing: 0.5px;
+        }
+    }
+}

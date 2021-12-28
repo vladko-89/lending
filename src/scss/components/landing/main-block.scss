@@ -1,0 +1,266 @@
+.main-landing {
+    position: relative;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-top: rem(180);
+    padding-bottom: rem(105);
+
+    @include media(">tablet") {
+        padding-top: rem(260);
+        padding-bottom: rem(295);
+    }
+
+    .container {
+        position: relative;
+        z-index: 5;
+    }
+
+    .title {
+        margin-bottom: rem(42);
+        letter-spacing: -1px;
+
+        @include media(">tablet") {
+            margin-bottom: rem(36);
+        }
+    }
+
+    .bg {
+        position: relative;
+        width: 3601px;
+        left: 50%;
+    }
+
+    .sub-title {
+        margin: auto;
+        margin-bottom: rem(50);
+        letter-spacing: 0.5px;
+
+        @include media(">tablet") {
+            margin-bottom: rem(58);
+            width: 50rem;
+        }
+    }
+
+    .btn {
+        padding: rem(16) rem(51);
+    }
+}
+
+.trusted {
+    margin-top: rem(120);
+
+    @include media(">tablet") {
+        margin-top: rem(144);
+    }
+
+    &-title {
+        letter-spacing: 0.2px;
+        font-weight: map-get($text, 'bold');
+        margin-bottom: rem(20);
+
+        @include media(">tablet") {
+            margin-bottom: rem(31);
+        }
+    }
+
+    &-row {
+        @extend %d-flex-justify-start;
+        align-items: stretch;
+        flex-wrap: wrap;
+
+        @include media(">tablet") {
+            justify-content: center
+        }
+    }
+
+    &-logo {
+        @extend %d-flex-justify-start;
+        width: 50%;
+        margin-bottom: rem(23);
+        padding: 0 0;
+        box-sizing: border-box;
+        padding: 0 rem(25);
+        max-width: 200px;
+
+        @include media(">tablet") {
+            width: 20%;
+            padding: 0 rem(25);
+
+        }
+
+        img {
+            object-fit: contain;
+            margin: auto;
+            height: 50px;
+        }
+    }
+}
+
+.main-landing-ellipse {
+    position: absolute;
+    top: -13%;
+    left: calc(100% - 105%);
+    z-index:1;
+    background: radial-gradient(50% 50% at 50% 50%, #90BAD2 0%, #4361BA 100%);
+    border-radius: 50%;
+    width: 2857px;
+    height: 2857px;
+    filter: blur(150px);
+}
+
+.ellipse {
+    position: absolute;
+    top: 0;
+    left: calc(100% - 67%);
+    z-index: 1;
+
+    width: 531px;
+    height: 531px;
+    height: 100%;
+    
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    filter: blur(95px);
+}
+
+
+.ellipse-green {
+    width: 1005px;
+   left: 30%;
+    max-height: 1004px;
+    height: 100%;
+
+    //background-image: url('../images/Ellipse 3.png');
+    background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
+mix-blend-mode: lighten;
+
+}
+
+.ellipse-blue {
+    filter: blur(85px);
+    width: 952px;
+    height: 952px;
+    background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
+
+}
+
+// @media screen and (min-width: 1825px) {
+//     .ellipse {
+//         height: 73%;
+//         width: 50%;
+//         top: 7%;
+//         left: 25%;
+//     }
+// }
+
+// @media screen and (max-width: 1025px) {
+//     .main-landing-ellipse {
+//         top: -34%;
+//         left: -25%;
+//     }
+//     .ellipse {
+//         height: 73%;
+//         left: 31%;
+//     }
+
+//     .ellipse-green {
+//         filter: blur(41px);
+//     }
+//     .ellipse-blue {
+//         filter: blur(70px);
+//         left: 24%;
+//     }
+// }
+
+
+
+// @media screen and (max-width: 768px) {
+//     .ellipse {
+//         left: 20%;
+//         top: 10%;
+//         width: 63%;
+//         height: 67%;
+//     }
+//     .main-landing-ellipse {
+//         top: -76%;
+//         left: -56%;
+//     }
+
+//     .ellipse-green {
+//         filter: blur(27px);
+//     }
+
+//     .ellipse-blue {
+//         filter: blur(52px);
+
+//     }
+// }
+
+
+
+// @media screen and (max-width: 425px) {
+//     .ellipse {
+//         height: 45%;
+//         width: 100%;
+
+//         top: 10%;
+//         left: 1%;
+//     }
+
+//     .ellipse-green {
+//         filter: blur(20px);
+//     }
+//     .ellipse-blue {
+//         filter: blur(48px);
+//         left: 1%;
+//     }
+// }
+
+// @media screen and (max-width:375px) {
+//     .ellipse {
+//         height: 50%;
+//         width: 110%;
+//         top: 19%;
+//         left: -6%;
+//     }
+// }
+
+// @media screen and (min-width: 2560px) {
+//     .main-landing-ellipse {
+//         position: absolute;
+//         top: -85%;
+//         left: -3%;
+//         background: radial-gradient(50% 50% at 50% 50%, #90BAD2 0%, #4361BA 100%);
+//         border-radius: 50%;
+//         width: 2857px;
+//         height: 2857px;
+//         filter: blur(200px);
+//     }
+
+//     .ellipse {
+//         width: 37.1%;
+//         left: 25%;
+//         height: 100%;
+//         max-height: 952px;
+//     }
+
+//     .ellipse-blue {
+//         left: 30%;
+//         border: 100px solid transparent;
+//         background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
+//         -moz-border-image: -moz-linear-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), -moz-linear-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
+//         mix-blend-mode: normal;
+//         filter: blur(200px);
+//     }
+
+//     .ellipse-green {
+//         top: 0;
+//         width: 49.2%;
+//         max-height: 1004px;
+//         height: 100%;
+    
+//         //background-image: url('../images/Ellipse 3.png');
+//     }
+// }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+@@include('../partials/head/head.html')
+
+<body>
+  <!-- @@include('../components/popup-learn.html') -->
+  <div class="wrapper">
+    @@include('../layout/header.html')
+    <main class="main">
+      <div class="bg">
+        <div class="bg__top">
+          <div class="main-landing-ellipse"></div>
+          <div class="ellipse ellipse-green"></div>
+          <div class="ellipse ellipse-blue"></div>
+        </div>
+        <div class="bg__center">
+          <div class="forget__ellipse ellipse-orange"></div>
+          <div class="forget-blue"></div>
+        </div>
+        <div class="bg__bottom">
+          <div class="build__overlay"></div>
+          
+        </div>
+      </div>
+      <div class="main-bg">
+        @@include('../components/landing/main-block.html')
+        @@include('../components/landing/forget-section.html')
+        @@include('../components/landing/build-section.html')
+        @@include('../components/landing/deploy-section.html')
+      </div>
+      @@include('../components/landing/ship-section.html')
+      @@include('../components/landing/fluence-section.html')
+      @@include('../components/landing/partners.html')
+      @@include('../components/landing/roadmap-section.html')
+    </main>
+    @@include('../layout/footer.html')
+  </div>
+
+  @@include('../partials/scripts/common.html')
+</body>
+
+</html>

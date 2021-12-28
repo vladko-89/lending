@@ -1,0 +1,187 @@
+.ship {
+    border-color: map-get($color, 'white');
+    color: map-get($color, 'black');
+    padding: rem(120) 0;
+
+    @include media(">tablet") {
+        padding: rem(205) 0 rem(157);
+    }
+
+    .title {
+        margin-bottom: rem(50);
+    }
+
+    .sub-title {
+        margin-bottom: rem(70);
+
+        @include media(">tablet") {
+            margin-bottom: rem(113);
+        }
+    }
+
+    .item {
+        margin-bottom: rem(60);
+
+        @include media(">tablet") {
+            margin-bottom: rem(55);
+        }
+
+        .item-block {
+            @extend %d-flex-justify-center;
+            width: max-content;
+            border: 1px solid #7687BE;
+            box-sizing: border-box;
+            border-radius: rem(5);
+            height: rem(50);
+            align-items: center;
+            margin-bottom: rem(30);
+            box-sizing: border-box;
+
+            @include media(">tablet") {
+                height: rem(102);
+                margin-bottom: rem(45);
+                border: 2px solid #7687BE;
+                border-radius: rem(14);
+            }
+
+            @include media(">desktop") {
+                display: flex;
+            }
+
+            &.logo-wrap {
+                max-width: rem(158);
+                width: 100%;
+                padding-left: rem(10);
+                padding-right: rem(10);
+
+                img {
+                    padding: 0 rem(5);
+                    width: 20%;
+                    max-height: 40px;
+                }
+
+                @include media(">tablet") {
+                    max-width: rem(318);
+                    padding-left: rem(20);
+                    padding-right: rem(20);
+
+                    img {
+                        padding: 0 rem(9);
+                    }
+                }
+            }
+
+            &.build-wrap {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin: auto;
+                margin-bottom: rem(30);
+                box-sizing: border-box;
+                max-width: rem(87);
+                width: 100%;
+
+                @include media(">tablet") {
+                    margin-left: 0;
+                    margin-right: auto;
+                    padding: 0 rem(41);
+                    margin-bottom: rem(45);
+                    max-width: rem(176);
+                }
+
+                svg {
+                    width: rem(45);
+                    height: rem(7);
+
+                    &:first-child {
+                        @include size(rem(15));
+                        margin-bottom: rem(8);
+
+                        @include media(">tablet") {
+                            @include size(rem(30));
+                            margin-bottom: rem(16);
+                        }
+                    }
+
+                    @include media(">tablet") {
+                        width: rem(90);
+                    }
+                }
+            }
+
+            &.usage-wrap {
+                max-width: rem(153);
+                padding: 0 0;
+                width: 100%;
+
+                svg,
+                img {
+                    width: 50%;
+                    padding: 0 rem(11);
+                }
+
+                @include media(">tablet") {
+                    max-width: rem(300);
+                    padding: 0 rem(15);
+                }
+            }
+
+            img {
+                height: 90%;
+                object-fit: contain;
+            }
+        }
+
+        .item-title {
+            @extend %d-flex-align-start;
+            font-size: rem(19);
+            line-height: 1.2;
+            font-weight: map-get($text, 'bold');
+            margin-bottom: rem(12);
+
+            @include media(">tablet") {
+                font-size: rem(30);
+                font-weight: map-get($text, 'regular');
+                margin-bottom: rem(24);
+            }
+        }
+
+        .status {
+            display: none;
+            font-size: rem(10);
+            letter-spacing: 1px;
+            line-height: 1.6;
+            text-transform: uppercase;
+            font-weight: map-get($text, 'bold');
+            color: map-get($color, 'color-status');
+            padding-left: rem(14);
+            padding-top: rem(8);
+
+            @include media(">tablet") {
+                display: block;
+            }
+        }
+
+        p {
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .btn {
+        padding-left: rem(51);
+        padding-right: rem(51);
+
+        @include media(">tablet") {
+            margin-top: rem(45);
+        }
+    }
+
+    .underline {
+        display: block;
+        margin-top: rem(35);
+
+        &:hover {
+          color: map-get($color, 'hover-link-on-white');
+        }
+    }
+}

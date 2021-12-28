@@ -1,0 +1,202 @@
+.partners {
+    padding-top: rem(125);
+    color: map-get($color, 'black');
+    padding-bottom: rem(190);
+
+    @include media(">tablet") {
+        margin-top: rem(47);
+        padding-bottom: rem(145);
+    }
+
+    .title {
+        margin-bottom: rem(62);
+        max-width: rem(871);
+        width: 100%;
+        margin: auto;
+
+        @include media(">tablet") {
+            margin-bottom: rem(90);
+        }
+    }
+
+    .partners-slider {
+        position: relative;
+        overflow: hidden;
+        padding: rem(70) rem(10);
+        margin-bottom: rem(130);
+
+        @include media(">tablet") {
+            margin-bottom: rem(295);
+            padding: rem(20) 0;
+        }
+
+        .slider-nav {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: rem(28);
+            height: rem(37);
+            z-index: 10;
+            cursor: pointer;
+
+            &.partners-button-next,
+            &.partners-button-prev {
+                width: rem(20);
+                height: rem(20);
+                border-top: 3px solid map-get($color, 'blue');
+                border-right: 3px solid map-get($color, 'blue');
+                transition: all 0.3s ease;
+
+                &:hover {
+                    border-color: map-get($color, 'hover-play');
+                }
+
+            }
+
+            &.partners-button-next {
+                right: 0;
+                transform: rotate(45deg);
+
+                @include media(">tablet") {
+                    right: 17%;
+                }
+            }
+
+            &.partners-button-prev {
+                left: 0;
+                transform: rotate(-135deg);
+
+                @include media(">tablet") {
+                    left: 17%;
+                }
+            }
+        }
+    }
+
+    .swiper-slide {
+        .item {
+            padding: rem(62) rem(30);
+            border: 2px solid #7687BE;
+            box-sizing: border-box;
+            // box-shadow: 0px 5px 25px rgba(19, 44, 97, 0.7);
+            border-radius: rem(14);
+            max-width: rem(748);
+            width: 100%;
+            margin: auto;
+            // margin: 0 rem(157);
+
+            @include media(">tablet") {
+                padding: rem(60) rem(70);
+            }
+        }
+
+        p {
+            line-height: 1.3;
+            font-size: rem(18);
+            letter-spacing: 0.5px;
+        }
+    }
+
+    .logo {
+        max-width: rem(120);
+        width: 100%;
+        margin-bottom: rem(10);
+    }
+
+    .slider-title {
+        margin-bottom: rem(35);
+        font-size: rem(30);
+        font-weight: map-get($text, 'medium');
+        line-height: 1.1;
+
+        @include media(">tablet") {
+            margin-bottom: rem(42);
+            font-size: rem(42);
+        }
+    }
+}
+
+.community {
+    .text-center {
+        max-width: rem(553);
+        width: 100%;
+        margin: auto;
+    }
+
+    .title {
+        margin-bottom: rem(50);
+        font-size: rem(42);
+
+        @include media(">tablet") {
+            margin-bottom: rem(35);
+            font-size: rem(60);
+        }
+    }
+
+    ul {
+        @extend %d-flex-column;
+        align-items: center;
+        margin-top: rem(49);
+
+        @include media(">tablet") {
+            margin-bottom: rem(81);
+            flex-direction: row;
+            justify-content: center;
+            margin-top: rem(79);
+        }
+
+        li {
+            margin-bottom: rem(32);
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            @include media(">tablet") {
+                margin-bottom: 0;
+                margin-right: rem(57);
+            }
+        }
+
+        a {
+            @extend %d-flex-align-center;
+            font-size: rem(19);
+            line-height: 1.2;
+            font-weight: map-get($text, 'bold');
+            color: map-get($color, 'black');
+            transition: map-get($base, 'base-transition');
+
+            &:hover {
+                color: map-get($color, 'popup-bg');
+
+                svg {
+                    fill: map-get($color, 'popup-bg');
+                }
+
+                span {
+                    border-color: map-get($color, 'popup-bg');
+                }
+            }
+
+            svg {
+                width: rem(16);
+                fill: map-get($color, 'black');
+                margin: auto;
+                transition: map-get($base, 'base-transition');
+            }
+        }
+
+        span {
+            @extend %d-flex-align-center;
+            justify-content: center;
+            @include size(rem(38));
+            border-radius: 50%;
+            overflow: hidden;
+            box-sizing: border-box;
+            border: 1.5px solid #000000;
+            margin-right: rem(20);
+            transition: map-get($base, 'base-transition');
+        }
+    }
+}

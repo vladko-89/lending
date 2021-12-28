@@ -1,0 +1,30 @@
+<div class="list-item">
+  <div class="stripe">
+    <svg>
+      <use xlink:href="#big-arrow"></use>
+    </svg>
+  </div>
+  <div class="list-item-content">
+    <a href="@@href" class="list-item-name" target="_blank">
+      <p>@@title</p>
+      @@if (context.nameIcon) {<img src="@@nameIcon" alt="">}
+    </a>
+    <span>@@textcontent</span>
+    @@if (context.links){
+    <ul class="list-item-links">
+      @@for (var i = 0; i < context.links.list.length; i++) { <li>
+        <a href="`+(links.list[i].linkhref)+`" target="_blank">`+(links.list[i].linkname)+`</a>
+        @@if (context.pics){
+          @@for (var i = 0; i < context.pics.url.length; i++) {
+            <img src="`+(pics.url[i].picurl)+`" alt="">
+          }
+        }
+        </li>
+      }
+    </ul>
+    }
+    @@if (context.linkIcon){
+      <a href="@@linkIconHref" target="_blank"> <img src="@@linkIconPic" alt=""> @@linkIcon</a>
+    }
+  </div>
+</div>

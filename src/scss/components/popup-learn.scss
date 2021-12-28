@@ -1,0 +1,57 @@
+.popup-learn {
+    @extend %d-flex-align-center;
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    padding: rem(19) rem(15);
+    text-align: center;
+    min-height: rem(60);
+    background-color: map-get($color, 'popup-bg');
+    color: map-get($color, 'black');
+    z-index: 16;
+
+    .countdown {
+        @extend %d-flex-align-center;
+    }
+
+    .text {
+        @extend %d-flex-align-center;
+        flex-wrap: wrap;
+    }
+
+    p,
+    .countdown-number {
+        letter-spacing: 0.5px;
+    }
+
+    .countdown-number {
+        &:last-child {
+            &::after {
+                content: '!';
+            }
+        }
+
+        &::after {
+            content: ':';
+            display: inline-block;
+        }
+
+    }
+
+    .close {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: rem(16);
+        height: rem(24);
+        right: rem(20);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+            color: map-get($color, 'hover-play');
+        }
+    }
+}

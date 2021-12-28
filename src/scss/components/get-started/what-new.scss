@@ -1,0 +1,126 @@
+.what-new{
+  padding-bottom: rem(120);
+  @include media(">tablet") {
+    padding-bottom: rem(167);
+  }
+  h2{
+    margin-bottom: rem(22);
+    @include media(">tablet") {
+      margin-bottom: rem(30);
+    }
+  }
+  .subtitle{
+    margin-bottom: rem(40);
+    letter-spacing: 0.5px;
+    @include media(">tablet") {
+      margin-bottom: rem(79);
+    }
+    p{
+      font-size: rem(21);
+      font-weight: map-get($text , 'regular' );
+      line-height: 1.37;
+      color: map-get($color , 'grey' );
+      @include media(">tablet") {
+        font-size: map-deep-get($headings, 'h3-font-size');
+      }
+    }
+  }
+  .updates{
+    margin-bottom: rem(60);
+    @include media(">tablet-lg") {
+      margin-bottom: rem(0);
+    }
+    h3{
+      font-size: rem(19);
+      font-weight: map-get($text , 'regular' );
+      line-height: map-get($text , 'base-lh' );
+      color: map-get($color , 'grey' );
+      margin-bottom: rem(22);
+      @include media(">tablet") {
+        margin-bottom: rem(31);
+        font-size: rem(30);
+      }
+    }
+  }
+  .update-news{
+    li{
+      margin-bottom: rem(36);
+      @include media(">tablet") {
+        margin-bottom: rem(33);
+      }
+    }
+    span{
+      color: map-get($color , 'grey' );
+      font-size: rem(10);
+      font-weight: map-get($text , 'bold' );
+      line-height: 1.6;
+      margin-bottom: rem(5);
+    }
+    p{
+      margin-bottom: rem(5);
+      letter-spacing: 0.2px;
+
+      a {
+        color: map-get($color , 'white' );
+        font-size: rem(15);
+        font-weight: map-get($text , 'bold' );
+        line-height: 1.4;
+      }
+    }
+  }
+  .calls{
+    li{
+      display: flex;
+      margin-bottom: rem(32);
+      @include media(">tablet") {
+        margin-bottom: rem(31);
+      }
+    }
+    img{
+      margin-right: rem(20);
+    }
+    .calls-desc{
+      padding-top: rem(7)
+    }
+  }
+  .calendar-info{
+    @extend %d-flex-column-center;
+    position: relative;
+    padding: rem(20) rem(24);
+    max-width: 100%;
+    @include media(">phone-lg") {
+      max-width: rem(285);
+      margin-top: rem(70);
+    }
+    &::before{
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 100%;
+      width: rem(25);
+      border: 2px solid rgba(196, 196, 196, 0.5);
+      border-right: none;
+      border-radius: rem(16) 0 0 rem(16);
+    }
+    &::after{
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+      width: rem(25);
+      border: 2px solid rgba(196, 196, 196, 0.5);
+      border-left: none;
+      border-radius: 0 rem(16) rem(16) 0;
+    }
+    p{
+      margin-bottom: rem(20);
+      color: map-get($color , 'grey' );
+      text-align: center;
+      strong{
+        color: map-get($color , 'white' );
+      }
+    }
+  }
+}

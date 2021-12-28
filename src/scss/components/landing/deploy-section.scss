@@ -1,0 +1,70 @@
+.deploy {
+    position: relative;
+
+    padding-top: rem(35);
+    padding-bottom: rem(127);
+    // background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 35.42%, #000000 67.71%, rgba(0, 0, 0, 0) 100%);
+    background-color: rgba(19, 12, 13, 1);
+    background-image: url('../images/neironnet.png');
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @include media(">tablet") {
+        padding-top: rem(306);
+        padding-bottom: rem(172);
+    }
+
+    .title {
+        margin-bottom: rem(54);
+
+        @include media(">tablet") {
+            margin-bottom: rem(46);
+        }
+    }
+
+    .sub-title {
+        margin-bottom: rem(105);
+
+        @include media(">tablet") {
+            margin-bottom: rem(144);
+        }
+    }
+
+    .item {
+        margin-bottom: rem(50);
+
+        &-title {
+            margin-bottom: rem(12);
+            font-weight: map-get($text, 'bold');
+            font-size: rem(19);
+            line-height: 1.2;
+
+            @include media(">tablet") {
+                font-weight: map-get($text, 'medium');
+                font-size: rem(30);
+                margin-bottom: rem(24);
+            }
+        }
+
+        p {
+            color: map-get($color, 'grey');
+            letter-spacing: 0.5px;
+        }
+    }
+}
+
+// @media screen and (max-width: 768px) {
+//     .deploy-bg {
+//         position: absolute;
+//         top: -20%;
+//         left: -25%;
+
+//         width: 1000px;
+//         height: 300px;
+//         border-radius: 30%;
+//         background-color: rgba(19, 12, 13, 1);
+//         filter:blur(1px);
+//     }
+// }

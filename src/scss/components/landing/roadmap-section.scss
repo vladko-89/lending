@@ -1,0 +1,180 @@
+.roadmap {
+    color: map-get($color, 'black');
+
+    .title {
+        margin-bottom: rem(45);
+
+        @include media(">tablet") {
+            margin-bottom: rem(40);
+        }
+    }
+
+    .sub-title {
+        margin: auto;
+
+        @include media(">tablet") {
+            width: 65rem;
+        }
+    }
+
+    .roadmap-block {
+        background-color: map-get($color, 'black');
+    }
+
+    &-items {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        margin-top: rem(59);
+        background-color: map-get($color, 'black');
+        color: map-get($color, 'grey-dark');
+        position: relative;
+
+        .roadmap-button-next {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            right: rem(10);
+            width: rem(20);
+            height: rem(20);
+            border-top: 4px solid map-get($color, 'blue');
+            border-right: 4px solid map-get($color, 'blue');
+            transition: all 0.3s ease;
+            cursor: pointer;
+            z-index: 10;
+            transform: rotate(45deg);
+
+            &:hover {
+                border-color: map-get($color, 'hover-play');
+            }
+        }
+
+        @include media(">tablet") {
+            max-width: rem(1500);
+            width: 100%;
+            margin: auto;
+            margin-top: rem(41);
+        }
+
+        .swiper-slide {
+            overflow: hidden;
+            max-width: rem(297);
+            width: 100%;
+
+            @include media(">tablet") {
+                max-width: 100%;
+            }
+
+            &:first-of-type {
+                .item {
+                    &::after {
+                        width: rem(923);
+                        height: rem(876);
+                        background: radial-gradient(50% 50% at 50% 50%, #D1D290 0%, #7ACB5E 100%);
+                        mix-blend-mode: normal;
+                        filter: blur(144px);
+                        top: 100%;
+                        transform: translate(-24%, -24%);
+                    }
+
+                    color: map-get($color, "grey")
+                }
+
+            }
+
+            &:nth-of-type(2) {
+                .item {
+                    &::after {
+                        width: rem(996);
+                        height: rem(946);
+                        background: radial-gradient(50% 50% at 50% 50%, #D1D290 0%, #7ACB5E 100%);
+                        mix-blend-mode: normal;
+                        filter: blur(144px);
+                        top: 100%;
+                        transform: translate(-27%, -34%);
+                    }
+
+                    color: map-get($color, "grey")
+                }
+
+            }
+
+            &:nth-of-type(3) {
+                .item {
+                    &::after {
+                        width: rem(1025);
+                        height: rem(973);
+                        background: radial-gradient(50% 50% at 50% 50%, #D1D290 0%, #7ACB5E 100%);
+                        mix-blend-mode: normal;
+                        opacity: 0.9;
+                        filter: blur(144px);
+                        top: 100%;
+                        transform: translate(-25%, -54%);
+                    }
+                }
+
+            }
+
+            &:nth-of-type(4) {
+                .item {
+                    &::after {
+                        width: rem(1096);
+                        height: rem(1040);
+                        background: radial-gradient(50% 50% at 50% 50%, #B5D290 0%, #7ACB5E 100%);
+                        mix-blend-mode: normal;
+                        opacity: 0.9;
+                        filter: blur(144px);
+                        top: 0;
+                        transform: translate(-25%, 17%);
+                    }
+                }
+
+            }
+        }
+
+        .item {
+            // max-width: rem(297);
+            min-height: rem(580);
+            width: 100%;
+            padding: rem(50) rem(15) 0;
+            position: relative;
+            overflow: hidden;
+            box-sizing: border-box;
+
+            &::after {
+                position: absolute;
+                content: '';
+                border-radius: 50%;
+                overflow: hidden;
+            }
+
+            @include media(">tablet") {
+                // max-width: rem(358);
+                padding: rem(50) rem(30) 0 rem(40);
+                min-height: rem(845);
+            }
+        }
+
+        .phase {
+            line-height: 1.2;
+            font-size: rem(42);
+            font-weight: map-get($text, 'medium');
+        }
+
+        .name {
+            font-size: rem(30);
+            line-height: 1.2;
+            margin-bottom: rem(14);
+        }
+
+        .date {
+            font-size: rem(12);
+            line-height: 1.3;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: map-get($text, 'bold');
+            margin-bottom: rem(54);
+        }
+    }
+}

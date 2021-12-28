@@ -1,0 +1,23 @@
+.tools{
+  padding-bottom: rem(85);
+  @include media(">=tablet") {
+    padding-bottom: rem(100);
+  }
+  h2{
+    margin-bottom: rem(47);
+    @include media(">=tablet") {
+      margin-bottom: rem(75);
+    }
+  }
+  .list-item-links{
+    li{
+      @extend %d-flex-align-center;
+      img{
+        margin-left: rem(5);
+        &:first-of-type{
+          margin-left: rem(10);
+        }
+      }
+    }
+  }
+}

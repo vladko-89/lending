@@ -1,0 +1,59 @@
+.composability{
+  padding: rem(85) 0 rem(120);
+  background: url("../images/composability-bg.png")  no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  @include media(">=tablet") {
+    padding: rem(110) 0 rem(150);
+  }
+  img{
+    margin-top: rem(0);
+    margin-left: 0;
+    width: 180px;
+
+    @include media(">=tablet") {
+      margin-top: rem(95);
+      margin-left: rem(-40);
+    }
+  }
+  h2{
+    margin-bottom: rem(30);
+    line-height: 1.19;
+    margin-top: rem(15);
+    @include media(">=tablet") {
+      margin-bottom: rem(51);
+      line-height: 1.16;
+      margin-top: 0;
+    }
+  }
+  p{
+    font-size: rem(21);
+    font-weight: map-get($text , 'regular' );
+    margin-bottom: rem(40);
+    line-height: 1.43;
+    letter-spacing: 0.6px;
+    @include media(">=tablet") {
+      font-size: rem(24);
+      font-weight: map-get($text , 'regular' );
+      margin-bottom: rem(62);
+      line-height: 1.37;
+    }
+  }
+  .btns{
+    @extend %d-flex-column-start;
+    @include media(">=tablet") {
+     flex-direction: row;
+    }
+  }
+  .btn{
+    padding: rem(10) rem(22);
+  }
+  .primary{
+    margin-right: 0;
+    margin-bottom: rem(10);
+    @include media(">=tablet") {
+      margin-bottom: 0;
+      margin-right: rem(20);
+    }
+  }
+}

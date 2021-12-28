@@ -1,0 +1,86 @@
+<section class="less">
+    <div class="container">
+        <h2>Less code for greater result</h2>
+        <div class="sub-title">Less code required to create reliable distributed systems</div>
+        <div class="tabs">
+            <div class="content">
+                <div class="tabs__content tab-one active">
+                    <pre class="line-numbers">
+<code class="language-javascript">import "@fluencelabs/aqua-dht/pubsub.aqua"
+func become_online(relay: PeerId, serviceName: string):
+    services <- findSubscribers(relay, "status_service")
+    for srv <- services par:
+        on srv.peer_id:
+            StatusService srv.service_id
+            StatusService.set_status("online")
+
+
+
+          </code>
+                    </pre>
+                </div>
+                <div class="tabs__content tab-two">
+                    <pre class="line-numbers">
+<code class="language-javascript">func collect_timestamps(node: string) -> []u64:
+  res: *u64
+  on node:
+    k <- Op.string_to_b58(node)
+    nodes <- Kademlia.neighborhood(k, nil, nil)
+    for n <- nodes par:
+      on n:
+        res <- Peer.timestamp_ms()
+    MyOp.identity(res!14)
+  MyOp.identity(res!10)
+  <- res</code>
+                </pre>
+                </div>
+                <div class="tabs__content tab-three">
+                    <pre class="line-numbers">
+<code class="language-javascript">func share_image(peerA: Peer, peerB: Peer, fileName: string, ipfs: Multiaddr):
+    on peerA.peerId via peerA.relay:
+        cid <- Ipfs.upload(file_name, ipfs)
+    on peerB.peerId via peerB.relay:
+        Ipfs.download(cid, ipfs)
+        Chat.renderImage(cid)
+
+
+
+
+</code>
+                </pre>
+                </div>
+                <div class="tabs__content tab-forth">
+                    <pre class="line-numbers">
+<code class="language-javascript">
+};</code>
+                </pre>
+                </div>
+            </div>
+            <nav>
+                <div class="tabs__nav">
+                    <ul>
+                        <li data-tab="tab-one" class="tabs__btn js-tabs-btn active">Service discovery</li>
+                        <li data-tab="tab-two" class="tabs__btn js-tabs-btn">Distributed computation</li>
+                        <li data-tab="tab-three" class="tabs__btn js-tabs-btn">File sharing</li>
+                        <li data-tab="tab-forth" class="tabs__btn js-tabs-btn">Composing protocols</li>
+                    </ul>
+                </div>
+                <a href="https://github.com/fluencelabs/examples">More examples</a>
+            </nav>
+        </div>
+        <div class="common">
+            <p>Common distributed routine is now commoditized as Aqua libraries</p>
+            <ul>
+                <li>Service discovery</li>
+                <li>Replication</li>
+                <li>Deploy</li>
+                <li>Overlay networks</li>
+                <li>Load balancing</li>
+                <li>Failovers</li>
+                <li>Orchestration</li>
+                <li>Backups</li>
+                <li>Consensus engines</li>
+            </ul>
+        </div>
+    </div>
+</section>

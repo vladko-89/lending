@@ -1,0 +1,207 @@
+.start-building-section {
+  background: url("../images/bg-start.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-x: center;
+  padding-top: rem(200);
+
+  @include media(">=tablet") {
+    padding-top: rem(290);
+  }
+
+  h1 {
+    line-height: 1.2;
+    // letter-spacing: -1px;
+    font-weight: 500;
+    margin-bottom: rem(46);
+
+    @include media(">=tablet") {
+      line-height: 1.1;
+      margin-bottom: rem(107);
+    }
+  }
+
+  h2 {
+    margin-bottom: rem(40);
+    line-height: 1.2;
+    font-weight: map-get($text, 'regular');
+
+    @include media(">=tablet") {
+      line-height: 1.17;
+      margin-bottom: rem(72);
+    }
+  }
+
+  .start-block {
+    padding-bottom: rem(80);
+
+    @include media(">=tablet") {
+      padding-bottom: rem(100);
+    }
+  }
+
+  .list-item-links {
+    margin-bottom: rem(50);
+    margin-top: rem(20);
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    @include media(">tablet") {
+      margin-bottom: 0;
+      margin-top: rem(30);
+    }
+
+    p {
+      font-size: rem(19);
+      color: map-get($color, 'grey');
+      line-height: 1.2;
+      letter-spacing: 0.5px;
+      font-weight: map-get($text, 'bold');
+      margin-bottom: rem(30);
+    }
+
+    li {
+      position: relative;
+      padding: 0 0 0 rem(15);
+      margin-bottom: rem(16);
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        width: rem(6);
+        background-image: url(../images/link-arrow.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+      }
+
+      a {
+        color: map-get($color, 'white');
+        font-size: rem(15);
+        line-height: 1.4;
+        font-weight: map-get($text, 'bold');
+        letter-spacing: 0.2px;
+        transition: map-get($base, 'base-transition');
+
+        &:hover {
+          color: map-get($color, 'popup-bg');
+        }
+      }
+
+      &:hover {
+
+        &::before {
+          background-image: url(../images/link-arrow-hover.svg);
+        }
+      }
+    }
+  }
+
+  .link {
+    @extend %d-flex-align-center;
+
+    a {
+      font-size: rem(15);
+      color: map-get($color, 'white');
+      font-weight: map-get($text, 'bold');
+      line-height: map-get($text, 'secondary-lh');
+      border: 1px solid #CFFFC4;
+      border-radius: 30px;
+      padding: rem(9) rem(22) rem(10) rem(20);
+      transition: map-get($base, 'base-transition');
+
+      svg {
+        margin-left: rem(7);
+        width: rem(10);
+        height: rem(8);
+      }
+
+      &:hover {
+        color: map-get($color, 'popup-bg');
+
+        svg {
+          fill: map-get($color, 'popup-bg');
+        }
+      }
+    }
+  }
+
+  .community {
+    ul {
+      margin: 0;
+      justify-content: flex-start;
+
+      span {
+        border-color: #CFFFC4;
+      }
+
+      a {
+        color: map-get($color, 'white');
+      }
+    }
+  }
+
+  .contribute {
+    padding-bottom: rem(120);
+
+    @include media(">tablet") {
+      padding-bottom: rem(110);
+    }
+
+    h2 {
+      margin-bottom: rem(25);
+
+      @include media(">tablet") {
+        margin-bottom: rem(45);
+      }
+    }
+
+    p {
+      font-size: rem(21);
+      color: map-get($color, 'grey');
+      font-weight: map-get($text, 'regular');
+      line-height: 1.42;
+      margin-bottom: rem(40);
+      letter-spacing: 0.5px;
+
+      @include media(">tablet") {
+        margin-bottom: rem(50);
+        font-size: rem(24);
+        line-height: 1.37;
+      }
+    }
+
+    .link {
+      a {
+        @extend %d-flex-align-center;
+        transition: map-get($base, 'base-transition');
+
+        svg {
+          fill: map-get($color, 'white');
+          margin-left: 0;
+          margin-right: rem(8);
+          width: rem(16);
+          height: rem(16);
+        }
+
+        &:hover {
+          color: map-get($color, 'popup-bg');
+
+          svg {
+            fill: map-get($color, 'popup-bg');
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+// Global variables
+//
+// Base font styles for headings and links.
+// Base font styles for headings and links.
+$browser-context: 10;
+
+// For headers
+$headings: ("h1-font-size": 80px,
+  "h2-font-size": 60px,
+  "h3-font-size": 42px,
+  "h4-font-size": 30px,
+  "h5-font-size": 19px,
+  "h6-font-size": 15px,
+);
+
+// Global vars for body typography
+$base: ("base-font": ("Hauora", Helvetica, Arial, sans-serif),
+  "base-transition": all 0.3s ease,
+  "base-border-radius": 5px,
+  "base-min-width": 320px,
+);
+
+//font-size vars
+$text: ("extra-small-font": 10px,
+  "small-font-size": 14px,
+  "menu-font-size": 15px,
+  "base-font-size": 16px,
+  "semi-font-size": 18px,
+  "big-font-size": 20px,
+  "base-lh": 1.2,
+  "secondary-lh": 1.4,
+  "tertiary-lh": 1.6,
+  "light": 300,
+  "regular": 400,
+  "medium": 500,
+  "semi-bold": 600,
+  "bold": 700,
+  "extra-bold": 800,
+  "black": 900,
+);
+
+//colors vars
+
+$color: ('white': #FFFFFF,
+  "white-opacity": rgba(255, 255, 255, 0.4),
+  'black': #000000,
+  'primary': #333333,
+  'btn-bg-primary': rgba(0, 0, 0, 0.8),
+  'btn-bg-secondary': rgba(77, 77, 77, 0.5),
+  'hover-menu': #CFFFC4,
+  'input-color': rgba(77, 77, 77, 0.5),
+  'input-bg': rgba(77, 77, 77, 0.5),
+  'grey': #CCCCCC,
+  'grey-light': #C4C4C4,
+  'dark-grey': #130C0D,
+  'grey-dark': rgba(196, 196, 196, 0.5),
+  'grey-hover': rgba(196, 196, 196, 0.2),
+  'color-status': rgba(0, 0, 0, 0.5),
+  'color-number': rgba(0, 0, 0, 0.25),
+  'hover-btn': rgba(15, 15, 15, 0.8),
+  'hover-link-on-white': #aaa,
+  "popup-bg": #CFFFC4,
+  'hover-play': #4D4D4D,
+  'blue': #7687BE,
+  'code-bg': #1E1E1E,
+  "circle-technoogy": radial-gradient(50% 50% at 50% 50%, #90bad2 0%, #5e79cb 100%),
+  "error": #EF4646,
+);
+
+//box-shadow vars
+$box-shadow: ("base-shadow": 0px 12px 24px rgba(35, 25, 86, 0.1),
+);
+
+// Vars for forms
+$forms: ("base-font": "Hauora",
+  "form-element-padding": unquote("0.4em 0.7em"),
+  "form-element-border-color": #999,
+  "form-element-focus-border-color": #fff,
+  "placeholder-color": #999,
+);
+
+// Breakpoints for include media mixin
+$breakpoints: ("phone": 480px,
+  "phone-lg": 576px,
+  "tablet": 768px,
+  "tablet-lg": 992px,
+  "desktop": 1024px,
+  "widescreen": 1200px,
+  "widescreen-md": 1366px,
+  "widescreen-lg": 1440px,
+  "full-hd": 1920px,
+);
+
+// Keywords for include media mixin
+$media-expressions: ("screen": "screen",
+  "print": "print",
+  "handheld": "handheld",
+  "landscape": "(orientation: landscape)",
+  "portrait": "(orientation: portrait)",
+  "retina2x": "(-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi)",
+  "retina3x": "(-webkit-min-device-pixel-ratio: 2.5), (min-resolution: 240dpi)",
+);

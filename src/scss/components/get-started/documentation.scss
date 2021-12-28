@@ -1,0 +1,41 @@
+.documentation{
+  padding-bottom: rem(120);
+  @include media(">=tablet") {
+    padding-bottom: rem(150);
+  }
+  h2{
+    margin-bottom: rem(45);
+    @include media(">=tablet") {
+      margin-bottom: rem(70);
+    }
+  }
+  .full-doc-link{
+    margin-top: rem(20);
+    @include media(">=tablet") {
+      margin-top: rem(30);
+    }
+    svg{
+      width: rem(10);
+      height: rem(8);
+    }
+  }
+  .list-item-links{
+    margin-top: 0;
+    margin-bottom: 40px !important;
+    p{
+      margin-bottom: rem(20);
+      @include media(">=tablet") {
+        margin-bottom: rem(30);
+      }
+    }
+    br{
+      content: '';
+      margin-top: rem(25);
+      display: block;
+      @include media(">=tablet") {
+        content: unset;
+        margin-top: 0;
+      }
+    }
+  }
+}

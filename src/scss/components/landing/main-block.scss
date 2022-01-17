@@ -106,7 +106,7 @@
     border-radius: 50%;
     width: 2857px;
     height: 2857px;
-    filter: blur(150px);
+    filter: blur(45px);
 }
 
 .ellipse {
@@ -128,7 +128,7 @@
 
 .ellipse-green {
     width: 1005px;
-   left: 30%;
+    left: 31%;
     max-height: 1004px;
     height: 100%;
 
@@ -146,121 +146,110 @@ mix-blend-mode: lighten;
 
 }
 
-// @media screen and (min-width: 1825px) {
-//     .ellipse {
-//         height: 73%;
-//         width: 50%;
-//         top: 7%;
-//         left: 25%;
-//     }
-// }
+@media screen and (max-width: 1920px) {
+    .ellipse-green {
+        left: 23%;
+    }
 
-// @media screen and (max-width: 1025px) {
-//     .main-landing-ellipse {
-//         top: -34%;
-//         left: -25%;
-//     }
-//     .ellipse {
-//         height: 73%;
-//         left: 31%;
-//     }
+    .ellipse-blue {
+        left: 25%;
+    }
 
-//     .ellipse-green {
-//         filter: blur(41px);
-//     }
-//     .ellipse-blue {
-//         filter: blur(70px);
-//         left: 24%;
-//     }
-// }
+    .main-landing-ellipse {
+        left: calc(100% - 120%);
+    }
+}
 
-
-
-// @media screen and (max-width: 768px) {
-//     .ellipse {
-//         left: 20%;
-//         top: 10%;
-//         width: 63%;
-//         height: 67%;
-//     }
-//     .main-landing-ellipse {
-//         top: -76%;
-//         left: -56%;
-//     }
-
-//     .ellipse-green {
-//         filter: blur(27px);
-//     }
-
-//     .ellipse-blue {
-//         filter: blur(52px);
-
-//     }
-// }
-
-
-
-// @media screen and (max-width: 425px) {
-//     .ellipse {
-//         height: 45%;
-//         width: 100%;
-
-//         top: 10%;
-//         left: 1%;
-//     }
-
-//     .ellipse-green {
-//         filter: blur(20px);
-//     }
-//     .ellipse-blue {
-//         filter: blur(48px);
-//         left: 1%;
-//     }
-// }
-
-// @media screen and (max-width:375px) {
-//     .ellipse {
-//         height: 50%;
-//         width: 110%;
-//         top: 19%;
-//         left: -6%;
-//     }
-// }
-
-// @media screen and (min-width: 2560px) {
-//     .main-landing-ellipse {
-//         position: absolute;
-//         top: -85%;
-//         left: -3%;
-//         background: radial-gradient(50% 50% at 50% 50%, #90BAD2 0%, #4361BA 100%);
-//         border-radius: 50%;
-//         width: 2857px;
-//         height: 2857px;
-//         filter: blur(200px);
-//     }
-
-//     .ellipse {
-//         width: 37.1%;
-//         left: 25%;
-//         height: 100%;
-//         max-height: 952px;
-//     }
-
-//     .ellipse-blue {
-//         left: 30%;
-//         border: 100px solid transparent;
-//         background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
-//         -moz-border-image: -moz-linear-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), -moz-linear-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
-//         mix-blend-mode: normal;
-//         filter: blur(200px);
-//     }
-
-//     .ellipse-green {
-//         top: 0;
-//         width: 49.2%;
-//         max-height: 1004px;
-//         height: 100%;
+@media screen and (max-width: 1600px) {
+    .ellipse-green {
+        width: 581px;
+        left: 29%;
+        max-height: 581px;
+        height: 100%;
     
-//         //background-image: url('../images/Ellipse 3.png');
-//     }
-// }
+        //background-image: url('../images/Ellipse 3.png');
+        background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
+    mix-blend-mode: lighten;
+    
+    }
+    
+    .ellipse-blue {
+        filter: blur(85px);
+        left: 31%;
+        width: 551px;
+        height: 551px;
+        background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
+    
+    }
+
+    .ellipse {
+        top: 2%;
+        filter: blur(44px);
+    }
+
+    .main-landing-ellipse {
+        width: 1653px;
+        height: 1653px;
+        top: -4%;
+        left: -7%;
+    }
+}
+
+@media screen and (max-width: 1025px) {
+    .ellipse-green {
+        width: 581px;
+        left: 24%;
+        max-height: 581px;
+        height: 100%;
+    
+        //background-image: url('../images/Ellipse 3.png');
+        background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
+    mix-blend-mode: lighten;
+    
+    }
+    
+    .ellipse-blue {
+        filter: blur(85px);
+        left: 25%;
+        width: 551px;
+        height: 551px;
+        background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
+    
+    }
+
+    .ellipse {
+        top: 2%;
+        filter: blur(44px);
+    }
+
+    .main-landing-ellipse {
+        width: 1653px;
+        height: 1653px;
+        top: -4%;
+        left: -33%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main-landing-ellipse {
+
+        top: -7%;
+        left: -135%;
+    }
+
+    .ellipse {
+        left: -26%;
+    }
+
+    .ellipse-blue {
+        height: 496px;
+        top: 3%;
+    }
+
+    .ellipse-green {
+        height: 450px;
+        top: 3%;
+        filter: blur(100px);
+    }
+}
+

@@ -55,16 +55,16 @@
     }
 }
 
-// @media screen and (max-width: 768px) {
-//     .deploy-bg {
-//         position: absolute;
-//         top: -20%;
-//         left: -25%;
+@media screen and (max-width: 1441px) {
+    .deploy {
+        background-size: cover;
+    }
+}
 
-//         width: 1000px;
-//         height: 300px;
-//         border-radius: 30%;
-//         background-color: rgba(19, 12, 13, 1);
-//         filter:blur(1px);
-//     }
-// }
+
+
+@media screen and (max-width: 760px) {
+    .deploy {
+        background-size: cover;
+    }
+}

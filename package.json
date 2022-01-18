@@ -36,7 +36,6 @@
     "gulp-newer": "^1.4.0",
     "gulp-notify": "^3.2.0",
     "gulp-rename": "^1.4.0",
-    "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5",
     "gulp-uglify": "^3.0.2",
     "htmlhint-stylish": "^1.0.3",
@@ -54,11 +53,13 @@
   "dependencies": {
     "bootstrap-4-grid": "^3.4.0",
     "choices.js": "^9.0.1",
+    "gulp-sass": "^5.1.0",
     "include-media": "^1.4.9",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "perfect-scrollbar": "^1.5.3",
     "prismjs": "^1.25.0",
+    "sass": "^1.47.0",
     "swiper": "^6.4.6",
     "validate.js": "^0.13.1"
   }

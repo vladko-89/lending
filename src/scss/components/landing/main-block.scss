@@ -28,7 +28,9 @@
     .bg {
         position: relative;
         width: 3601px;
-        left: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
     }
 
     .sub-title {
@@ -100,19 +102,22 @@
 .main-landing-ellipse {
     position: absolute;
     top: -13%;
-    left: calc(100% - 105%);
     z-index:1;
     background: radial-gradient(50% 50% at 50% 50%, #90BAD2 0%, #4361BA 100%);
     border-radius: 50%;
     width: 2857px;
     height: 2857px;
     filter: blur(45px);
+    left: 50%;
+    margin-left: calc(-1 * 2857px / 2);
 }
 
 .ellipse {
     position: absolute;
     top: 0;
-    left: calc(100% - 67%);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     z-index: 1;
 
     width: 531px;
@@ -128,7 +133,9 @@
 
 .ellipse-green {
     width: 1005px;
-    left: 31%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
     max-height: 1004px;
     height: 100%;
 
@@ -146,24 +153,21 @@ mix-blend-mode: lighten;
 
 }
 
-@media screen and (max-width: 1920px) {
-    .ellipse-green {
-        left: 23%;
-    }
+// @media screen and (max-width: 2220px) {
+//     .main-landing-ellipse {
+//         left: calc(100% - 112%);
+//     }
+// }
 
-    .ellipse-blue {
-        left: 25%;
-    }
-
-    .main-landing-ellipse {
-        left: calc(100% - 120%);
-    }
-}
+// @media screen and (max-width: 1920px) {
+//     .main-landing-ellipse {
+//         left: calc(100% - 120%);
+//     }
+// }
 
 @media screen and (max-width: 1600px) {
     .ellipse-green {
         width: 581px;
-        left: 29%;
         max-height: 581px;
         height: 100%;
     
@@ -175,7 +179,6 @@ mix-blend-mode: lighten;
     
     .ellipse-blue {
         filter: blur(85px);
-        left: 31%;
         width: 551px;
         height: 551px;
         background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -188,29 +191,26 @@ mix-blend-mode: lighten;
     }
 
     .main-landing-ellipse {
-        width: 1653px;
-        height: 1653px;
+        width: 2553px;
+        height: 2553px;
         top: -4%;
-        left: -7%;
+        margin-left: calc(-1 * 2553px / 2);
     }
 }
 
 @media screen and (max-width: 1025px) {
     .ellipse-green {
         width: 581px;
-        left: 24%;
         max-height: 581px;
         height: 100%;
     
         //background-image: url('../images/Ellipse 3.png');
         background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
-    mix-blend-mode: lighten;
-    
+        mix-blend-mode: lighten;
     }
     
     .ellipse-blue {
         filter: blur(85px);
-        left: 25%;
         width: 551px;
         height: 551px;
         background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -226,21 +226,25 @@ mix-blend-mode: lighten;
         width: 1653px;
         height: 1653px;
         top: -4%;
-        left: -33%;
+        margin-left: calc(-1 * 1653px / 2);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .ellipse-blue {
+        right: initial;
+        left: 50%;
+        margin-left: calc(-1 * 551px / 2);
+    }
+
+    .ellipse-green {
+        right: initial;
+        left: 50%;
+        margin-left: calc(-1 * 581px / 2);
     }
 }
 
 @media screen and (max-width: 375px) {
-    .main-landing-ellipse {
-
-        top: -7%;
-        left: -135%;
-    }
-
-    .ellipse {
-        left: -26%;
-    }
-
     .ellipse-blue {
         height: 496px;
         top: 3%;

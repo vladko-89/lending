@@ -1,5 +1,6 @@
 .ship {
     border-color: map-get($color, 'white');
+    background-color: map-get($color, 'white');
     color: map-get($color, 'black');
     padding: rem(120) 0;
 

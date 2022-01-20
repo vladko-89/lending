@@ -332,6 +332,13 @@ a {
     font-size: 60px !important;
   }
 }
+@media screen and (max-width: 375px) {
+  .title {
+    max-width: 345px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 
 .sub-title {
   font-size: 2.1rem;
@@ -1110,7 +1117,9 @@ input:focus::placeholder {
 .main-landing .bg {
   position: relative;
   width: 3601px;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .main-landing .sub-title {
   margin: auto;
@@ -1177,19 +1186,22 @@ input:focus::placeholder {
 .main-landing-ellipse {
   position: absolute;
   top: -13%;
-  left: -5%;
   z-index: 1;
   background: radial-gradient(50% 50% at 50% 50%, #90BAD2 0%, #4361BA 100%);
   border-radius: 50%;
   width: 2857px;
   height: 2857px;
   filter: blur(45px);
+  left: 50%;
+  margin-left: -1428.5px;
 }
 
 .ellipse {
   position: absolute;
   top: 0;
-  left: 33%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 1;
   width: 531px;
   height: 531px;
@@ -1202,7 +1214,9 @@ input:focus::placeholder {
 
 .ellipse-green {
   width: 1005px;
-  left: 31%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   max-height: 1004px;
   height: 100%;
   background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
@@ -1216,23 +1230,9 @@ input:focus::placeholder {
   background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
 }
 
-@media screen and (max-width: 1920px) {
-  .ellipse-green {
-    left: 23%;
-  }
-
-  .ellipse-blue {
-    left: 25%;
-  }
-
-  .main-landing-ellipse {
-    left: -20%;
-  }
-}
 @media screen and (max-width: 1600px) {
   .ellipse-green {
     width: 581px;
-    left: 29%;
     max-height: 581px;
     height: 100%;
     background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
@@ -1241,7 +1241,6 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
-    left: 31%;
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -1253,16 +1252,15 @@ input:focus::placeholder {
   }
 
   .main-landing-ellipse {
-    width: 1653px;
-    height: 1653px;
+    width: 2553px;
+    height: 2553px;
     top: -4%;
-    left: -7%;
+    margin-left: -1276.5px;
   }
 }
 @media screen and (max-width: 1025px) {
   .ellipse-green {
     width: 581px;
-    left: 24%;
     max-height: 581px;
     height: 100%;
     background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
@@ -1271,7 +1269,6 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
-    left: 25%;
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -1286,19 +1283,23 @@ input:focus::placeholder {
     width: 1653px;
     height: 1653px;
     top: -4%;
-    left: -33%;
+    margin-left: -826.5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ellipse-blue {
+    right: initial;
+    left: 50%;
+    margin-left: -275.5px;
+  }
+
+  .ellipse-green {
+    right: initial;
+    left: 50%;
+    margin-left: -290.5px;
   }
 }
 @media screen and (max-width: 375px) {
-  .main-landing-ellipse {
-    top: -7%;
-    left: -135%;
-  }
-
-  .ellipse {
-    left: -26%;
-  }
-
   .ellipse-blue {
     height: 496px;
     top: 3%;
@@ -1312,6 +1313,7 @@ input:focus::placeholder {
 }
 .ship {
   border-color: #FFFFFF;
+  background-color: #FFFFFF;
   color: #000000;
   padding: 12rem 0;
 }
@@ -1494,6 +1496,7 @@ input:focus::placeholder {
 
 .deploy {
   position: relative;
+  z-index: 6;
   padding-top: 3.5rem;
   padding-bottom: 12.7rem;
   background-color: #130c0d;
@@ -1553,6 +1556,7 @@ input:focus::placeholder {
 @media screen and (max-width: 760px) {
   .deploy {
     background-size: cover;
+    background-color: initial;
   }
 }
 .roadmap {
@@ -2106,10 +2110,11 @@ input:focus::placeholder {
 .forget__ellipse {
   position: absolute;
   top: 12%;
-  left: 25%;
   z-index: 3;
   width: 1265px;
   height: 1258px;
+  left: 50%;
+  margin-left: -632.5px;
   border-radius: 50%;
 }
 
@@ -2123,7 +2128,9 @@ input:focus::placeholder {
   position: absolute;
   z-index: 1;
   top: 24%;
-  left: -5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 3601px;
   height: 1785px;
   background-image: url("../images/black-bg.png");
@@ -2134,27 +2141,16 @@ input:focus::placeholder {
   position: absolute;
   z-index: 2;
   top: 15%;
-  left: -8%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 3132px;
   height: 1447px;
   background-image: url("../images/bg-balls.png");
   background-size: 3132px 1447px;
 }
 
-@media screen and (max-width: 1920px) {
-  .forget__ellipse {
-    left: 17%;
-  }
-
-  .forget-blue {
-    left: -30%;
-  }
-}
 @media screen and (max-width: 1600px) {
-  .forget__ellipse {
-    left: 5%;
-  }
-
   .ellipse-orange {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
@@ -2164,14 +2160,9 @@ input:focus::placeholder {
   .forget-blue {
     width: 1945px;
     background-size: 1945px 1447px;
-    left: -16%;
   }
 }
 @media screen and (max-width: 1025px) {
-  .forget__ellipse {
-    left: -10%;
-  }
-
   .ellipse-orange {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
@@ -2187,7 +2178,6 @@ input:focus::placeholder {
 @media screen and (max-width: 375px) {
   .forget__ellipse {
     top: 11%;
-    left: -117%;
     filter: blur(37px);
     height: 1100px;
   }
@@ -2198,7 +2188,7 @@ input:focus::placeholder {
 
   .build__overlay {
     background-size: 2147px 1785px;
-    top: 20%;
+    top: 25%;
   }
 }
 .start-building-section {
@@ -2733,7 +2723,9 @@ input:focus::placeholder {
 .main-landing .bg {
   position: relative;
   width: 3601px;
-  left: 50%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
 }
 .main-landing .sub-title {
   margin: auto;
@@ -2800,19 +2792,22 @@ input:focus::placeholder {
 .main-landing-ellipse {
   position: absolute;
   top: -13%;
-  left: -5%;
   z-index: 1;
   background: radial-gradient(50% 50% at 50% 50%, #90BAD2 0%, #4361BA 100%);
   border-radius: 50%;
   width: 2857px;
   height: 2857px;
   filter: blur(45px);
+  left: 50%;
+  margin-left: -1428.5px;
 }
 
 .ellipse {
   position: absolute;
   top: 0;
-  left: 33%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   z-index: 1;
   width: 531px;
   height: 531px;
@@ -2825,7 +2820,9 @@ input:focus::placeholder {
 
 .ellipse-green {
   width: 1005px;
-  left: 31%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   max-height: 1004px;
   height: 100%;
   background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
@@ -2839,23 +2836,9 @@ input:focus::placeholder {
   background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
 }
 
-@media screen and (max-width: 1920px) {
-  .ellipse-green {
-    left: 23%;
-  }
-
-  .ellipse-blue {
-    left: 25%;
-  }
-
-  .main-landing-ellipse {
-    left: -20%;
-  }
-}
 @media screen and (max-width: 1600px) {
   .ellipse-green {
     width: 581px;
-    left: 29%;
     max-height: 581px;
     height: 100%;
     background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
@@ -2864,7 +2847,6 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
-    left: 31%;
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -2876,16 +2858,15 @@ input:focus::placeholder {
   }
 
   .main-landing-ellipse {
-    width: 1653px;
-    height: 1653px;
+    width: 2553px;
+    height: 2553px;
     top: -4%;
-    left: -7%;
+    margin-left: -1276.5px;
   }
 }
 @media screen and (max-width: 1025px) {
   .ellipse-green {
     width: 581px;
-    left: 24%;
     max-height: 581px;
     height: 100%;
     background: radial-gradient(50% 50% at 50% 50%, #03C55C 0%, #61DCA8 100%);
@@ -2894,7 +2875,6 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
-    left: 25%;
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -2909,19 +2889,23 @@ input:focus::placeholder {
     width: 1653px;
     height: 1653px;
     top: -4%;
-    left: -33%;
+    margin-left: -826.5px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .ellipse-blue {
+    right: initial;
+    left: 50%;
+    margin-left: -275.5px;
+  }
+
+  .ellipse-green {
+    right: initial;
+    left: 50%;
+    margin-left: -290.5px;
   }
 }
 @media screen and (max-width: 375px) {
-  .main-landing-ellipse {
-    top: -7%;
-    left: -135%;
-  }
-
-  .ellipse {
-    left: -26%;
-  }
-
   .ellipse-blue {
     height: 496px;
     top: 3%;
@@ -2935,6 +2919,7 @@ input:focus::placeholder {
 }
 .ship {
   border-color: #FFFFFF;
+  background-color: #FFFFFF;
   color: #000000;
   padding: 12rem 0;
 }
@@ -3117,6 +3102,7 @@ input:focus::placeholder {
 
 .deploy {
   position: relative;
+  z-index: 6;
   padding-top: 3.5rem;
   padding-bottom: 12.7rem;
   background-color: #130c0d;
@@ -3176,6 +3162,7 @@ input:focus::placeholder {
 @media screen and (max-width: 760px) {
   .deploy {
     background-size: cover;
+    background-color: initial;
   }
 }
 .roadmap {
@@ -3729,10 +3716,11 @@ input:focus::placeholder {
 .forget__ellipse {
   position: absolute;
   top: 12%;
-  left: 25%;
   z-index: 3;
   width: 1265px;
   height: 1258px;
+  left: 50%;
+  margin-left: -632.5px;
   border-radius: 50%;
 }
 
@@ -3746,7 +3734,9 @@ input:focus::placeholder {
   position: absolute;
   z-index: 1;
   top: 24%;
-  left: -5%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 3601px;
   height: 1785px;
   background-image: url("../images/black-bg.png");
@@ -3757,27 +3747,16 @@ input:focus::placeholder {
   position: absolute;
   z-index: 2;
   top: 15%;
-  left: -8%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
   width: 3132px;
   height: 1447px;
   background-image: url("../images/bg-balls.png");
   background-size: 3132px 1447px;
 }
 
-@media screen and (max-width: 1920px) {
-  .forget__ellipse {
-    left: 17%;
-  }
-
-  .forget-blue {
-    left: -30%;
-  }
-}
 @media screen and (max-width: 1600px) {
-  .forget__ellipse {
-    left: 5%;
-  }
-
   .ellipse-orange {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
@@ -3787,14 +3766,9 @@ input:focus::placeholder {
   .forget-blue {
     width: 1945px;
     background-size: 1945px 1447px;
-    left: -16%;
   }
 }
 @media screen and (max-width: 1025px) {
-  .forget__ellipse {
-    left: -10%;
-  }
-
   .ellipse-orange {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
@@ -3810,7 +3784,6 @@ input:focus::placeholder {
 @media screen and (max-width: 375px) {
   .forget__ellipse {
     top: 11%;
-    left: -117%;
     filter: blur(37px);
     height: 1100px;
   }
@@ -3821,7 +3794,7 @@ input:focus::placeholder {
 
   .build__overlay {
     background-size: 2147px 1785px;
-    top: 20%;
+    top: 25%;
   }
 }
 .aqua-p2p .column p {

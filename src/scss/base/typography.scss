@@ -115,6 +115,12 @@ a {
   @media screen and (min-width: 1366px) and (max-height: 880px) {
     font-size: map-deep-get($headings, 'h2-font-size') !important;
   }
+
+  @media screen and (max-width: 375px) {
+    max-width: 345px;
+    margin-right: auto;
+    margin-left: auto;
+  }
 }
 
 .sub-title {

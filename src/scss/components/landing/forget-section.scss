@@ -35,13 +35,13 @@
 .forget__ellipse {
     position: absolute;
     top: 12%;
-    left: 25%;
     z-index: 3;
 
     width: 1265px;
-
     height: 1258px;
     
+    left: 50%;
+    margin-left: calc(-1 * 1265px / 2);
     border-radius: 50%;
 }
 
@@ -57,7 +57,9 @@
     position: absolute;
     z-index: 1;
     top: 24%;
-    left: -5%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
     width: 3601px;
     height: 1785px;
@@ -70,7 +72,9 @@
     position: absolute;
     z-index: 2;
     top: 15%;
-    left: -8%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 
     width: 3132px;
     height: 1447px;
@@ -79,21 +83,7 @@
     background-size: 3132px 1447px;
 }
 
-@media screen and (max-width: 1920px) {
-    .forget__ellipse {
-        left: 17%;
-    }
-
-    .forget-blue {
-        left: -30%;
-    }
-}
-
 @media screen and (max-width: 1600px) {
-    .forget__ellipse {
-        left: 5%;
-        
-    }
 
     .ellipse-orange {
         background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
@@ -104,15 +94,10 @@
     .forget-blue {
         width: 1945px;
         background-size: 1945px 1447px;
-        left: -16%;
     }
 }
 
 @media screen and (max-width: 1025px) {
-    .forget__ellipse {
-        left: -10%;
-        
-    }
 
     .ellipse-orange {
         background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
@@ -130,7 +115,6 @@
 @media screen and (max-width: 375px) {
     .forget__ellipse {
         top: 11%;
-        left: -117%;
         filter: blur(37px);
         height: 1100px;
     }
@@ -141,7 +125,7 @@
 
     .build__overlay {
         background-size: 2147px 1785px;
-        top: 20%;
+        top: 25%;
     }
 }
 

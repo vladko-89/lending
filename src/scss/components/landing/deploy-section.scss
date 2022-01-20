@@ -1,5 +1,6 @@
 .deploy {
     position: relative;
+    z-index: 6;
 
     padding-top: rem(35);
     padding-bottom: rem(127);
@@ -66,5 +67,6 @@
 @media screen and (max-width: 760px) {
     .deploy {
         background-size: cover;
+        background-color: initial;
     }
 }

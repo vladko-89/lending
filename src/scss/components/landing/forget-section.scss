@@ -50,6 +50,7 @@
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
     filter: blur(110px);
+    -webkit-filter: blur(110px);
 }
 
 
@@ -89,6 +90,7 @@
         background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
         mix-blend-mode: normal;
         filter: blur(95px);
+        -webkit-filter: blur(95px);
     }
 
     .forget-blue {
@@ -103,6 +105,7 @@
         background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
         mix-blend-mode: normal;
         filter: blur(95px);
+        -webkit-filter: blur(95px);
     }
 
     .forget-blue {
@@ -116,6 +119,7 @@
     .forget__ellipse {
         top: 11%;
         filter: blur(37px);
+        -webkit-filter: blur(95px);
         height: 1100px;
     }
 

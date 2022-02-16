@@ -70,6 +70,7 @@ h3,
 h4,
 .h4 {
   font-size: map-deep-get($headings, 'h5-font-size');
+  font-weight: 500;
 
   @include media(">tablet") {
     font-size: map-deep-get($headings, 'h4-font-size');

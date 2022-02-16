@@ -37,6 +37,7 @@
             align-items: center;
             margin-bottom: rem(30);
             box-sizing: border-box;
+            box-shadow: 0px 5px 25px 0px rgba(19, 44, 97, 0.2);
 
             @include media(">tablet") {
                 height: rem(102);
@@ -137,12 +138,12 @@
             @extend %d-flex-align-start;
             font-size: rem(19);
             line-height: 1.2;
-            font-weight: map-get($text, 'bold');
+            font-weight: map-get($text, 'medium');
             margin-bottom: rem(12);
 
             @include media(">tablet") {
                 font-size: rem(30);
-                font-weight: map-get($text, 'regular');
+                font-weight: map-get($text, 'medium');
                 margin-bottom: rem(24);
             }
         }

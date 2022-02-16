@@ -280,6 +280,7 @@ h3,
 h4,
 .h4 {
   font-size: 19px;
+  font-weight: 500;
 }
 @media (min-width: 769px) {
   h4,
@@ -667,7 +668,7 @@ input:focus::placeholder {
   opacity: 0.5;
 }
 .form .input:hover {
-  background-color: rgba(196, 196, 196, 0.2);
+  background-color: #AAAAAA;
 }
 .form .input:focus {
   border: 1px solid rgba(196, 196, 196, 0.5);
@@ -1192,6 +1193,7 @@ input:focus::placeholder {
   width: 2857px;
   height: 2857px;
   filter: blur(45px);
+  -webkit-filter: blur(45px);
   left: 50%;
   margin-left: -1428.5px;
 }
@@ -1210,6 +1212,7 @@ input:focus::placeholder {
   background-size: 100% 100%;
   border-radius: 50%;
   filter: blur(95px);
+  -webkit-filter: blur(95px);
 }
 
 .ellipse-green {
@@ -1225,6 +1228,7 @@ input:focus::placeholder {
 
 .ellipse-blue {
   filter: blur(85px);
+  -webkit-filter: blur(85px);
   width: 952px;
   height: 952px;
   background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -1241,6 +1245,7 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
+    -webkit-filter: blur(85px);
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -1249,6 +1254,7 @@ input:focus::placeholder {
   .ellipse {
     top: 2%;
     filter: blur(44px);
+    -webkit-filter: blur(44px);
   }
 
   .main-landing-ellipse {
@@ -1269,6 +1275,7 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
+    -webkit-filter: blur(85px);
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -1277,6 +1284,7 @@ input:focus::placeholder {
   .ellipse {
     top: 2%;
     filter: blur(44px);
+    -webkit-filter: blur(44px);
   }
 
   .main-landing-ellipse {
@@ -1309,6 +1317,7 @@ input:focus::placeholder {
     height: 450px;
     top: 3%;
     filter: blur(100px);
+    -webkit-filter: blur(100px);
   }
 }
 .ship {
@@ -1350,6 +1359,7 @@ input:focus::placeholder {
   align-items: center;
   margin-bottom: 3rem;
   box-sizing: border-box;
+  box-shadow: 0px 5px 25px 0px rgba(19, 44, 97, 0.2);
 }
 @media (min-width: 769px) {
   .ship .item .item-block {
@@ -1448,13 +1458,13 @@ input:focus::placeholder {
 .ship .item .item-title {
   font-size: 1.9rem;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1.2rem;
 }
 @media (min-width: 769px) {
   .ship .item .item-title {
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 2.4rem;
   }
 }
@@ -1783,6 +1793,19 @@ input:focus::placeholder {
     padding-bottom: 14.5rem;
   }
 }
+.partners .partners-link:hover {
+  color: #aaa;
+}
+.partners .partners-svg--telegram {
+  margin-top: -2px;
+  margin-left: 8px;
+}
+.partners .partners-svg--discord {
+  margin-top: -1.5px;
+}
+.partners .partners-svg--github {
+  margin-top: -1.5px;
+}
 .partners .title {
   margin-bottom: 6.2rem;
   max-width: 87.1rem;
@@ -1928,13 +1951,13 @@ input:focus::placeholder {
   transition: all 0.3s ease;
 }
 .community ul a:hover {
-  color: #CFFFC4;
+  color: #AAAAAA;
 }
 .community ul a:hover svg {
-  fill: #CFFFC4;
+  fill: #AAAAAA;
 }
 .community ul a:hover span {
-  border-color: #CFFFC4;
+  border-color: #AAAAAA;
 }
 .community ul a svg {
   width: 1.6rem;
@@ -2122,6 +2145,7 @@ input:focus::placeholder {
   background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
   mix-blend-mode: normal;
   filter: blur(110px);
+  -webkit-filter: blur(110px);
 }
 
 .build__overlay {
@@ -2155,6 +2179,7 @@ input:focus::placeholder {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
     filter: blur(95px);
+    -webkit-filter: blur(95px);
   }
 
   .forget-blue {
@@ -2167,6 +2192,7 @@ input:focus::placeholder {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
     filter: blur(95px);
+    -webkit-filter: blur(95px);
   }
 
   .forget-blue {
@@ -2179,6 +2205,7 @@ input:focus::placeholder {
   .forget__ellipse {
     top: 11%;
     filter: blur(37px);
+    -webkit-filter: blur(95px);
     height: 1100px;
   }
 
@@ -2798,6 +2825,7 @@ input:focus::placeholder {
   width: 2857px;
   height: 2857px;
   filter: blur(45px);
+  -webkit-filter: blur(45px);
   left: 50%;
   margin-left: -1428.5px;
 }
@@ -2816,6 +2844,7 @@ input:focus::placeholder {
   background-size: 100% 100%;
   border-radius: 50%;
   filter: blur(95px);
+  -webkit-filter: blur(95px);
 }
 
 .ellipse-green {
@@ -2831,6 +2860,7 @@ input:focus::placeholder {
 
 .ellipse-blue {
   filter: blur(85px);
+  -webkit-filter: blur(85px);
   width: 952px;
   height: 952px;
   background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -2847,6 +2877,7 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
+    -webkit-filter: blur(85px);
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -2855,6 +2886,7 @@ input:focus::placeholder {
   .ellipse {
     top: 2%;
     filter: blur(44px);
+    -webkit-filter: blur(44px);
   }
 
   .main-landing-ellipse {
@@ -2875,6 +2907,7 @@ input:focus::placeholder {
 
   .ellipse-blue {
     filter: blur(85px);
+    -webkit-filter: blur(85px);
     width: 551px;
     height: 551px;
     background: radial-gradient(50% 50% at 50% 50%, #65A1C4 0%, #2257F3 100%), radial-gradient(50% 50% at 50% 50%, #091D0D 0%, #1B1012 100%);
@@ -2883,6 +2916,7 @@ input:focus::placeholder {
   .ellipse {
     top: 2%;
     filter: blur(44px);
+    -webkit-filter: blur(44px);
   }
 
   .main-landing-ellipse {
@@ -2915,6 +2949,7 @@ input:focus::placeholder {
     height: 450px;
     top: 3%;
     filter: blur(100px);
+    -webkit-filter: blur(100px);
   }
 }
 .ship {
@@ -2956,6 +2991,7 @@ input:focus::placeholder {
   align-items: center;
   margin-bottom: 3rem;
   box-sizing: border-box;
+  box-shadow: 0px 5px 25px 0px rgba(19, 44, 97, 0.2);
 }
 @media (min-width: 769px) {
   .ship .item .item-block {
@@ -3054,13 +3090,13 @@ input:focus::placeholder {
 .ship .item .item-title {
   font-size: 1.9rem;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 1.2rem;
 }
 @media (min-width: 769px) {
   .ship .item .item-title {
     font-size: 3rem;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 2.4rem;
   }
 }
@@ -3389,6 +3425,19 @@ input:focus::placeholder {
     padding-bottom: 14.5rem;
   }
 }
+.partners .partners-link:hover {
+  color: #aaa;
+}
+.partners .partners-svg--telegram {
+  margin-top: -2px;
+  margin-left: 8px;
+}
+.partners .partners-svg--discord {
+  margin-top: -1.5px;
+}
+.partners .partners-svg--github {
+  margin-top: -1.5px;
+}
 .partners .title {
   margin-bottom: 6.2rem;
   max-width: 87.1rem;
@@ -3534,13 +3583,13 @@ input:focus::placeholder {
   transition: all 0.3s ease;
 }
 .community ul a:hover {
-  color: #CFFFC4;
+  color: #AAAAAA;
 }
 .community ul a:hover svg {
-  fill: #CFFFC4;
+  fill: #AAAAAA;
 }
 .community ul a:hover span {
-  border-color: #CFFFC4;
+  border-color: #AAAAAA;
 }
 .community ul a svg {
   width: 1.6rem;
@@ -3728,6 +3777,7 @@ input:focus::placeholder {
   background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
   mix-blend-mode: normal;
   filter: blur(110px);
+  -webkit-filter: blur(110px);
 }
 
 .build__overlay {
@@ -3761,6 +3811,7 @@ input:focus::placeholder {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
     filter: blur(95px);
+    -webkit-filter: blur(95px);
   }
 
   .forget-blue {
@@ -3773,6 +3824,7 @@ input:focus::placeholder {
     background: radial-gradient(50% 50% at 50% 50%, #C51103 0%, #DC9E61 100%);
     mix-blend-mode: normal;
     filter: blur(95px);
+    -webkit-filter: blur(95px);
   }
 
   .forget-blue {
@@ -3785,6 +3837,7 @@ input:focus::placeholder {
   .forget__ellipse {
     top: 11%;
     filter: blur(37px);
+    -webkit-filter: blur(95px);
     height: 1100px;
   }
 
